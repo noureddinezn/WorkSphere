@@ -339,11 +339,13 @@ Btn1.addEventListener("click", () => {
   form.classList.toggle("hidden");
   form.reset();
 });
-const imageInput = document.getElementById("image");
-const imagePreview = document.getElementById("imageSRC");
-imageInput.addEventListener("change", ()=>{
-    const file = imageInput.files[0];
-    if (file){
-        imagePreview.src = URL.createObjectURL(file);
-    }
+const roleSelect = document.getElementById("role");
+const autreRoleDiv = document.querySelector(".autreRole");
+
+roleSelect.addEventListener("change", () => {
+  if (roleSelect.value === "autres") {
+    autreRoleDiv.classList.remove("hidden");
+  } else {
+    autreRoleDiv.classList.add("hidden");
+  }
 });
