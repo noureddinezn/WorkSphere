@@ -44,3 +44,7 @@ body {
   grid-row: 1 / 2;
   background-color: #4a90e2;
 }
+.serveurs {
+  grid-column: 8 / 10; 
+  grid-row: 1 / 2;
+}
