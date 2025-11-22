@@ -31,3 +31,12 @@ body {
   flex-direction: column;
   gap: 12px;
 }
+.chambers {
+  flex: 1;
+  padding: 25px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 33.5% 32% 32.5%;
+}
+
