@@ -339,3 +339,11 @@ Btn1.addEventListener("click", () => {
   form.classList.toggle("hidden");
   form.reset();
 });
+const imageInput = document.getElementById("image");
+const imagePreview = document.getElementById("imageSRC");
+imageInput.addEventListener("change", ()=>{
+    const file = imageInput.files[0];
+    if (file){
+        imagePreview.src = URL.createObjectURL(file);
+    }
+});
