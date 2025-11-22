@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+       <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>WorkSphere</title>
 </head>
 <body>
+    <div class="container">
+      <div class="unassigned-container">
+        <h1 class="title">Available Staff : <span></span></h1>
 
-    
+        <div id="unassigned_list" class="unassigned_list">
 
+        </div>
+
+        <button class="add_worker_btn">Add Staff</button>
+
+
+
+<div class="rooms">
+        <div class="room1">
+          <img src="imagess/office-meeting.avif" alt="" />
+          <i onclick="addUserToArea('conférence')" class="fa-solid fa-plus"></i>
+        </div>
+        <div class="room2">
+          <div class="room21">
+            <img src="images/SALLEdesecurity.webp" alt="" />
+            <i onclick="addUserToArea('sécurité')" class="fa-solid fa-plus"></i>
+          </div>
+          <div class="room22">
+            <img src="images/lasalledearchif.webp" alt="" />
+            <i onclick="addUserToArea('archives')" class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="room3">
+          <div class="room31">
+            <img src="images/LASALLPERSONNEL.jpg" alt="" />
+            <i onclick="addUserToArea('personnel')" class="fa-solid fa-plus"></i>
+          </div>
+          <div class="room32">
+            <img src="images/server-room.jpg" alt="" />
+            <i onclick="addUserToArea('serveurs')" class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="room4">
+          <img src="images/lasallederecuption.jpg" alt="" />
+          <i onclick="addUserToArea('réception')" class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+</div>
     <script src ="main.js" ></script>
 </body>
 </html>
