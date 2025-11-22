@@ -71,3 +71,8 @@ body {
   padding: 15px;
   border: 1px solid #ccc;
 }
+.room_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
