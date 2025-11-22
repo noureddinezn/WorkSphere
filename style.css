@@ -6,3 +6,28 @@ body {
   background: #f2f2f2; 
   font-family: Arial, sans-serif;
 }
+.left_panel {
+  width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  height: 100vh;
+}
+
+.btn_add {
+  width: 100%;
+  padding: 10px;
+  background: #287bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
