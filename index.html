@@ -18,17 +18,105 @@
       <div class="unassigned-container">
         <h1 class="title">Available Staff : <span></span></h1>
 
-        <div id="unassigned_list" class="unassigned_list">
-
-        </div>
+        <div id="unassigned_list" class="unassigned_list"></div>
 
         <button class="add_worker_btn">Add Staff</button>
+
+        <form class="form hidden">
+          <div class="input_group">
+            <label for="name">Name</label>
+            <input
+              title="Only letters and spaces, 2–50 characters"
+              type="text"
+              id="name"
+              placeholder="Enter worker name"
+              required
+            />
+          </div>
+
+          <div class="input_group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              title="Please enter a valid email format: example@domain.com"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+
+          <div class="input_group">
+            <label for="phone">Phone</label>
+            <input
+              title="Enter a valid Moroccan number starting with 06, 07, or +2126/+2127"
+              type="tel"
+              id="phone"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
+
+          <div class="input_group">
+            <label for="role">Role</label>
+            <select id="role" required>
+              <option value="" disabled selected>Select a role</option>
+              <option value="réceptionnistes">Réceptionnistes</option>
+              <option value="techniciensIT">Techniciens IT</option>
+              <option value="agentsDeSécurité">Agents de sécurité</option>
+              <option value="manager">Manager</option>
+              <option value="nettoyage">Nettoyage</option>
+              <option value="autres">Autres Role</option>
+            </select>
+          </div>
+
+          <div class="autreRole hidden">
+            <div class="input_group">
+              <label for="autreRole">Enter Role</label>
+              <input
+                title="Only letters and spaces, 2–50 characters"
+                type="text"
+                id="autreRole"
+                placeholder="Enter role name"
+              />
+            </div>
+          </div>
+
+          <div class="image_section">
+            <img
+              id="imageSRC"
+              src="imagess/Tokyo_-_part_5_volume_2_poster.webp"
+              class="preview_img"
+            />
+            <div class="input_group">
+              <label for="image">image</label>
+              <input
+                type="file"
+                id="image"
+                accept="image/png, image/jpeg, image/jpg, image/webp"
+              />
+            </div>
+          </div>
+
+          <div class="experience_section">
+            <h2 class="exp_title">Experience</h2>
+            <div class="experience_container"></div>
+            <button type="button" id="addExpBtn" class="exp_btn">
+              + Add Experience
+            </button>
+          </div>
+
+          <button type="submit" id="submitBtn" class="submit_btn">
+            Submit
+          </button>
+        </form>
+      </div>
+
 
 
 
 <div class="rooms">
         <div class="room1">
-          <img src="imagess/office-meeting.avif" alt="" />
+          <img src="images/office-meeting.avif" alt="" />
           <i onclick="addUserToArea('conférence')" class="fa-solid fa-plus"></i>
         </div>
         <div class="room2">
