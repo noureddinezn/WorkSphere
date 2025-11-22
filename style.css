@@ -61,3 +61,7 @@ body {
   grid-column: 8 / 10;
   grid-row: 3 / 4;
 }
+.archive {
+  grid-column: 10 / 13;
+  grid-row: 3 / 4;
+}
