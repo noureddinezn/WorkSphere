@@ -386,3 +386,24 @@ form.addEventListener("submit", (e) => {
       endDate: inputs[2].value,
     });
   });
+  const formData = {
+    id,
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    role: roleSelect.value,
+    autreRole: document.getElementById("autreRole").value, 
+    image: imagePreview.src,
+    experiences: experiences,
+  };
+
+  users.push(formData);
+  id++;
+
+  console.log(users);
+  form.reset();
+  experienceContainer.innerHTML = "";
+  imagePreview.src = "imagess/Tokyo_-_part_5_volume_2_poster.webp";
+  autreRoleDiv.classList.add("hidden");
+  showUsers(users);
+});
