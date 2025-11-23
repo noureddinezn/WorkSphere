@@ -150,4 +150,21 @@ body {
 .popup.hidden {
   display: none;
 }
+.popup_content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
 
+.popup_item {
+  display: flex;
+  align-items: center;
+  background: #eee;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
