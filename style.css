@@ -98,3 +98,31 @@ body {
   width: max-content;      
   font-size: 10px;         
 }
+.employee_box img,
+.room_emp img,
+.photo {
+  width: 30px;            
+  height: 30px;
+  border-radius: 50%;      
+  object-fit: cover;
+}
+
+.room_emp p,
+.room_emp span,
+.employee_box p,
+.employee_box span {
+  margin: 0;
+  font-size: 10px;
+  text-align: center;    
+}
+
+.remove_btn {
+  margin-top: 2px;         
+  padding: 2px 4px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 10px;
+  cursor: pointer;
+}
