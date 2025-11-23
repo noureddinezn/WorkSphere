@@ -168,3 +168,41 @@ body {
   margin-bottom: 10px;
   gap: 10px;
 }
+.popup_item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.add_btn {
+  margin-left: auto;
+  background: #287bff;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close_btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit_btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #287bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
