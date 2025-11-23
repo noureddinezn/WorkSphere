@@ -129,6 +129,39 @@ body {
   margin-top: 10px;
   transition: 0.3s;
 }
+.remove_exp_btn:hover {
+  background: #991b1b;
+}
+
+.exp_btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.exp_btn:hover {
+  background: #1e40af;
+}
+
+.submit_btn {
+  background: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.submit_btn:hover {
+  background: #0f4d26;
+}
+
 
 
 
