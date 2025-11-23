@@ -126,3 +126,12 @@ body {
   font-size: 10px;
   cursor: pointer;
 }
+.remove_btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
