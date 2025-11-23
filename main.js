@@ -407,3 +407,41 @@ form.addEventListener("submit", (e) => {
   autreRoleDiv.classList.add("hidden");
   showUsers(users);
 });
+const staffList = document.querySelector(".staff_list");
+
+const card = document.createElement("div");
+card.className = "staff_card";
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const closeModalBtn = document.querySelector(".close-modal");
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", closeUserModal);
+  }
+
+  const cancelModalBtn = document.getElementById("cancelModal");
+  if (cancelModalBtn) {
+    cancelModalBtn.addEventListener("click", closeUserModal);
+  }
+
+
+  const modal = document.getElementById("userModal");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeUserModal();
+      }
+    });
+  }document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      const modal = document.getElementById("userModal");
+      if (modal && !modal.classList.contains("hidden")) {
+        closeUserModal();
+      }
+    }
+  });
+});
+
+
+
