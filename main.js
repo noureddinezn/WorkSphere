@@ -374,3 +374,15 @@ addExpBtn.onclick = function () {
   box.querySelector(".remove_exp_btn").onclick = () => box.remove();
   experienceContainer.appendChild(box);
 };
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const experiences = [];
+  document.querySelectorAll(".experience_item").forEach((item) => {
+    const inputs = item.querySelectorAll("input");
+    experiences.push({
+      company: inputs[0].value,
+      startDate: inputs[1].value,
+      endDate: inputs[2].value,
+    });
+  });
