@@ -1,12 +1,14 @@
+ 
 const employees = [];
 let selectedRoom = null;
+
+
 const openForm = document.getElementById("openForm");
 const closeForm = document.getElementById("closeForm");
 const popup = document.getElementById("popup");
 const form = document.getElementById("employeeForm");
 const unassignedList = document.getElementById("unassigned_list");
 const popupList = document.getElementById("popup_employees");
-
 
 openForm.addEventListener("click", () => {
   popup.classList.remove("hidden");
@@ -30,12 +32,16 @@ document.getElementById("addExperienceBtn").addEventListener("click", () => {
     <input type="date" class="exp_end" required />
     <button class="remove_btn removeExp">X</button>
   `;
+
+
   div.querySelector(".removeExp").addEventListener("click", () => {
     div.remove();
   });
 
   document.getElementById("experienceList").appendChild(div);
 });
+
+
 form.onsubmit = (e) => {
   e.preventDefault();
 
@@ -74,6 +80,9 @@ form.onsubmit = (e) => {
   document.getElementById("experienceList").innerHTML = "";
 };
 
+ 
+
+
 function displayUnassigned() {
   unassignedList.innerHTML = "";
 
@@ -92,6 +101,7 @@ function displayUnassigned() {
       unassignedList.appendChild(div);
     });
 }
+
 
 function canEnterRoom(emp, room) {
   const role = emp.role;
@@ -114,6 +124,7 @@ function canEnterRoom(emp, room) {
 
   return rules[room].includes(role);
 }
+
 
 function openRoomPopup(roomName) {
   selectedRoom = roomName;
@@ -145,6 +156,8 @@ document.getElementById("closeRoomPopup")
   .addEventListener("click", () => {
     document.getElementById("roomPopup").classList.add("hidden");
 });
+
+
 
 function assignToRoom(id) {
   const emp = employees.find(e => e.id === id);
@@ -188,7 +201,4 @@ function displayRooms() {
       });
   });
 }
-
-
-
 

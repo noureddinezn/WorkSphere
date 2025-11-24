@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOrksphere</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Worksphere</title>
 </head>
+
 <body>
-     <section class="left_panel">
+  <section class="left_panel">
     <button id="openForm" class="btn_add">Ajouter un employe</button>
 
     <h3>Employés non affecte :</h3>
@@ -31,6 +33,7 @@
       </div>
       <div class="room_list"></div>
     </div>
+
     <div class="room security" data-room="securite">
       <div class="room_header">
         <h2>Salle de securite</h2>
@@ -38,7 +41,8 @@
       </div>
       <div class="room_list"></div>
     </div>
-  <div class="room reception" data-room="reception">
+
+    <div class="room reception" data-room="reception">
       <div class="room_header">
         <h2>Reception</h2>
         <button onclick="openRoomPopup('reception')" class="plus_btn">+</button>
@@ -61,12 +65,14 @@
       </div>
       <div class="room_list"></div>
     </div>
-  
+
   </section>
+
   <div id="popup" class="popup hidden">
     <div class="popup_content">
       <h2>Ajouter un employe</h2>
-       <form id="employeeForm">
+
+      <form id="employeeForm">
         <label>Nom :</label>
         <input type="text" id="name" required />
 
@@ -79,6 +85,7 @@
           <option>Nettoyage</option>
           <option>Autre</option>
         </select><br>
+
         <label>Email :</label>
         <input type="email" id="email" required />
 
@@ -87,14 +94,16 @@
 
         <label>Photo (URL) :</label>
         <input type="text" id="photoUrl" placeholder="https://exemple.com/photo.jpg" required />
-           <h3 style="margin-top:10px;">Experiences :</h3>
-          <div id="experienceList"></div>
 
-          <button type="button" id="addExperienceBtn" class="submit_btn" style="background:#444;">Ajouter une experience</button>
+        <h3 style="margin-top:10px;">Experiences :</h3>
+        <div id="experienceList"></div>
 
-           <button type="submit" class="submit_btn">Ajouter</button>
-         </form>
-         <button id="closeForm" class="close_btn">Fermer</button>
+        <button type="button" id="addExperienceBtn" class="submit_btn" style="background:#444;">Ajouter une experience</button>
+
+        <button type="submit" class="submit_btn">Ajouter</button>
+      </form>
+
+      <button id="closeForm" class="close_btn">Fermer</button>
     </div>
   </div>
 
@@ -105,8 +114,8 @@
       <div id="popup_employees" class="list"></div>
 
       <button id="closeRoomPopup" class="close_btn">Fermer</button>
+    </div>
   </div>
-  </div>
-   <script main.js></script> 
+
+  <script src="main.js"></script>
 </body>
-</html>
