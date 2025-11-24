@@ -36,6 +36,25 @@ document.getElementById("addExperienceBtn").addEventListener("click", () => {
 
   document.getElementById("experienceList").appendChild(div);
 });
+form.onsubmit = (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const role = document.getElementById("role").value;
+  const email = document.getElementById("email").value;     
+  const phone = document.getElementById("phone").value;     
+  const photoUrl = document.getElementById("photoUrl").value; 
+
+  const expBlocks = document.querySelectorAll("#experienceList .popup_item");
+  const expArr = [];
+
+  expBlocks.forEach(ex => {
+    expArr.push({
+      title: ex.querySelector(".exp_title").value,
+      start: ex.querySelector(".exp_start").value,
+      end: ex.querySelector(".exp_end").value
+    });
+  });
 
 
 
