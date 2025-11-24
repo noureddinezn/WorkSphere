@@ -115,5 +115,36 @@ function canEnterRoom(emp, room) {
   return rules[room].includes(role);
 }
 
+function openRoomPopup(roomName) {
+  selectedRoom = roomName;
+
+  popupList.innerHTML = "";
+
+  employees
+    .filter(e => e.room === null)
+    .forEach(e => {
+      if (canEnterRoom(e, roomName)) {
+        const div = document.createElement("div");
+        div.className = "popup_item";
+
+        div.innerHTML = `
+          <img src="${e.image}" />
+          <p>${e.name}</p>
+          <button class="add_btn">Ajouter</button>
+        `;
+
+        div.querySelector(".add_btn").onclick = () => assignToRoom(e.id);
+        popupList.appendChild(div);
+      }
+    });
+
+  document.getElementById("roomPopup").classList.remove("hidden");
+}
+
+document.getElementById("closeRoomPopup")
+  .addEventListener("click", () => {
+    document.getElementById("roomPopup").classList.add("hidden");
+});
+
 
 
