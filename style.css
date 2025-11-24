@@ -233,3 +233,138 @@ body {
     height: auto;
   }
 }
+@media (max-width: 600px) {
+
+  .left_panel {
+    padding: 15px;
+  }
+
+  .btn_add {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .chambers {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .room {
+    padding: 12px;
+  }
+
+  .room_header h2 {
+    font-size: 16px;
+  }
+
+  .plus_btn {
+    padding: 3px 9px;
+    font-size: 18px;
+  }
+
+  .employee_box,
+  .room_emp {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .employee_box img,
+  .room_emp img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .popup_content {
+    width: 90%;
+  }
+}
+#employeeForm {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  font-family: "Poppins", sans-serif;
+}
+
+
+#employeeForm h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+#employeeForm label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+}
+
+
+#employeeForm input,
+#employeeForm select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  background: #f9f9f9;
+}
+
+#employeeForm input:focus,
+#employeeForm select:focus {
+  border-color: #4a90e2;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(74,144,226,0.2);
+}
+
+
+#experienceList div {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+
+.submit_btn,
+#addExperienceBtn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: #4a90e2;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addExperienceBtn {
+  background: #555;
+}
+
+.submit_btn:hover,
+#addExperienceBtn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 480px) {
+  #employeeForm {
+    padding: 18px;
+    border-radius: 14px;
+  }
+} 
