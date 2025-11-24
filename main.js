@@ -93,5 +93,27 @@ function displayUnassigned() {
     });
 }
 
+function canEnterRoom(emp, room) {
+  const role = emp.role;
+
+  if (role === "Manager") return true;
+  if (role === "Nettoyage" && room === "archives") return false;
+  if (role === "Nettoyage") return true;
+
+  const rules = {
+    "reception": ["Manager","Nettoyage","Réceptionniste"],
+    "serveurs": ["Manager","Nettoyage","Technicien IT"],
+    "securite": ["Manager","Nettoyage","Agent de sécurité"],
+    "archives": ["Manager"],
+    "personnel": ["Manager", "Nettoyage", "Autre"],   
+    "conference": ["Manager", "Nettoyage", "Autre"]
+  };
+
+
+  if (!rules[room].length) return true;
+
+  return rules[room].includes(role);
+}
+
 
 
