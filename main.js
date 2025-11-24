@@ -55,6 +55,26 @@ form.onsubmit = (e) => {
       end: ex.querySelector(".exp_end").value
     });
   });
+  
+  const employee = {
+    id: Date.now(),
+    name,
+    role,
+    email,
+    phone,
+    image: photoUrl,   
+    experiences: expArr,
+    room: null
+  };
+
+  employees.push(employee);
+  displayUnassigned();
+  popup.classList.add("hidden");
+  form.reset();
+  document.getElementById("experienceList").innerHTML = "";
+};
+
+ 
 
 
 
