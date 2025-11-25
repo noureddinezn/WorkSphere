@@ -76,3 +76,133 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.plus_btn {
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.employee_box,
+.room_emp {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 2px;               
+  background: white;
+  padding: 4px 6px;      
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: max-content;      
+  font-size: 10px;         
+}
+.employee_box img,
+.room_emp img,
+.photo {
+  width: 30px;            
+  height: 30px;
+  border-radius: 50%;      
+  object-fit: cover;
+}
+
+.room_emp p,
+.room_emp span,
+.employee_box p,
+.employee_box span {
+  margin: 0;
+  font-size: 10px;
+  text-align: center;    
+}
+
+.remove_btn {
+  margin-top: 2px;         
+  padding: 2px 4px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.remove_btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+.popup_content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.popup_item {
+  display: flex;
+  align-items: center;
+  background: #eee;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.popup_item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.add_btn {
+  margin-left: auto;
+  background: #287bff;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close_btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit_btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #287bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
