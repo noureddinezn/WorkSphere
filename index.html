@@ -62,10 +62,51 @@
       <div class="room_list"></div>
     </div>
   
-
   </section>
+  <div id="popup" class="popup hidden">
+    <div class="popup_content">
+      <h2>Ajouter un employe</h2>
+       <form id="employeeForm">
+        <label>Nom :</label>
+        <input type="text" id="name" required />
 
+        <label>Role :</label>
+        <select id="role">
+          <option>Manager</option>
+          <option>Receptionniste</option>
+          <option>Technicien IT</option>
+          <option>Agent de securite</option>
+          <option>Nettoyage</option>
+          <option>Autre</option>
+        </select><br>
+        <label>Email :</label>
+        <input type="email" id="email" required />
 
+        <label>Telephone :</label>
+        <input type="text" id="phone" required />
+
+        <label>Photo (URL) :</label>
+        <input type="text" id="photoUrl" placeholder="https://exemple.com/photo.jpg" required />
+           <h3 style="margin-top:10px;">Experiences :</h3>
+          <div id="experienceList"></div>
+
+          <button type="button" id="addExperienceBtn" class="submit_btn" style="background:#444;">Ajouter une experience</button>
+
+           <button type="submit" class="submit_btn">Ajouter</button>
+         </form>
+         <button id="closeForm" class="close_btn">Fermer</button>
+    </div>
+  </div>
+
+  <div id="roomPopup" class="popup hidden">
+    <div class="popup_content">
+      <h2>Employes autorises</h2>
+
+      <div id="popup_employees" class="list"></div>
+
+      <button id="closeRoomPopup" class="close_btn">Fermer</button>
+  </div>
+  </div>
    <script main.js></script> 
 </body>
 </html>
